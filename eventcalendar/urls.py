@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup/', signup, name='signup'),
     path('logout/', user_logout, name='logout'),
-    path('', include('calendarapp.urls')),
-    path('home/', home, name="home"),
+    path('calendar/', include('calendarapp.urls')),
+    path('', home, name='home'),
 ]
