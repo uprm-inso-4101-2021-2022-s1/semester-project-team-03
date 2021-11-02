@@ -13,7 +13,7 @@ def signup(request):
             user = authenticate(username=username, password=password)
             if user:
                 login(request, user)
-                return redirect('calendarapp:calendar')
+                return redirect('home')
     context = {'form': forms}
     return render(request, 'signup.html', context)
 
