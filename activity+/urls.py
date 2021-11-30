@@ -21,11 +21,11 @@ from .views import DashboardView
 
 
 urlpatterns = [
-    path('', DashboardView.as_view(), name='dashboard'),
+    path('dashboard/', DashboardView.as_view(), name='dashboard'),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
-    path('', include('calendarapp.urls')),
+    path('calendar/', include('calendarapp.urls')),
     path('blog/', include('blog.urls')),
     path('usersettings/', include('usersettings.urls')),
-    path('home/', include('Website.urls')),
+    path('', include('Website.urls')),
 ]
