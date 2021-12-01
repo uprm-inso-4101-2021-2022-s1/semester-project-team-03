@@ -26,6 +26,5 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('calendar/', include('calendarapp.urls')),
     path('blog/', include('blog.urls')),
-    path('usersettings/', include('usersettings.urls')),
     path('', include('Website.urls')),
 ]
