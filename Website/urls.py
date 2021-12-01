@@ -4,5 +4,4 @@ from accounts import views as account_views
 
 urlpatterns = [
     path('', views.home, name='Website'),
-    path('home/', views.home, name='Website'),
 ]
