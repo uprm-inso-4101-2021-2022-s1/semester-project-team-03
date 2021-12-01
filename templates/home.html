@@ -1,11 +1,11 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
+  <head> 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'homepage/fonts/icomoon/style.css' %}">
@@ -14,7 +14,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'homepage/css/bootstrap.min.css' %}">
-
+    
     <!-- Style -->
     <link rel="stylesheet" href="{% static 'homepage/css/style.css' %}">
 
@@ -23,60 +23,62 @@
   <body>
 
 
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-        <div class="site-mobile-menu-body"></div>
       </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Activity+</a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="#" class="nav-link"><span>Home</span></a></li>
+                <li><a href="calendar/calender/" class="nav-link"><span>Calendar</span></a></li>
+                <li><a href="avatar/" class="nav-link"><span>Avatar</span></a></li>
+                <li><a href="store/" class="nav-link"><span>Store</span></a></li>
+                <li><a href="usersettings/" class="nav-link"><span>Settings</span></a></li>
+                <li><a href="accounts/signin/" class="nav-link"><span>Sign In</span></a></li>
+              </ul>
+            </nav>
+          </div>
 
 
-
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-
-            <div class="col-3">
-              <div class="site-logo">
-                <a href="home.html" class="font-weight-bold">Activity+</a>
-              </div>
-            </div>
-
-            <div class="col-9  text-right">
-
-
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-primary site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-white"></span></a></span>
-
-
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="#" class="nav-link">Home</a></li>
-                  <li><a href="calendar/calender/" class="nav-link">Calendar</a></li>
-                  <li><a href="blog/" class="nav-link">Timeline</a></li>
-                  <li><a href="avatar/" class="nav-link">Avatar</a></li>
-                  <li><a href="store/" class="nav-link">Store</a></li>
-                  <li><a href="usersettings/" class="nav-link">Settings</a></li>
-                  <li><a href="accounts/signin/" class="nav-link">Sign In</a></li>
-                </ul>
-              </nav>
-            </div>
-
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
           </div>
+
         </div>
+      </div>
+      
+    </header>
 
-      </header>
+    <div class="hero" style="background-image: url({% static 'homepage/images/hero.jpg' %});"></div>
 
-    <div class="hero"></div>
-
-
-
-
-
-
+    <div style="background-color:white;color:black;padding:20px;">
+      <h2 style="text-align:center;">Welcome to Activity+</h2>
+      <h5 style="text-align:center;">We look forward to helping you keep track of your projects, assignments,</h5>
+      <h5 style="text-align:center;"> and exams with our calendar/planner.</h5>
+      <h5 style="text-align:center;">With our planner you will be able to</h5>
+      <h5 style="text-align:center;">create, delete and modify events.</h5>
+      <h5 style="text-align:center;">You will also be able to mark an event as complete.</h5>
+      <h5 style="text-align:center;">Activity+ hopes to be able to help you become a more responsible student,</h5>
+      <h5 style="text-align:center;">and a student that doesn;t leave everything until the last minute.</h5>
+      <h5 style="text-align:center;">You also have the Activity+ mascot cheering you on as you can see below.</h5>
+      <p style="text-align:center;"><img src="{%static 'homepage/images/hero_2.gif'%}" ></p>
+    </div>
+    
     <script src="{% static 'homepage/js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'homepage/js/popper.min.js' %}"></script>
     <script src="{% static 'homepage/js/bootstrap.min.js' %}"></script>
