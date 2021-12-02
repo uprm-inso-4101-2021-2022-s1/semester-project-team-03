@@ -46,8 +46,8 @@
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="active"><a href="#" class="nav-link"><span>Home</span></a></li>
                 <li><a href="calendar/" class="nav-link"><span>Calendar</span></a></li>
-                <li><a href="avatar/" class="nav-link"><span>Avatar</span></a></li>
-                <li><a href="store/" class="nav-link"><span>Store</span></a></li>
+                <li><a href="dashboard/" class="nav-link"><span>Dashboard</span></a></li>
+{#                <li><a href="blog/" class="nav-link"><span>Blog</span></a></li>#}
                 <li><a href="usersettings/" class="nav-link"><span>Settings</span></a></li>
                 <li><a href="accounts/signin/" class="nav-link"><span>Sign In</span></a></li>
               </ul>
@@ -63,20 +63,74 @@
       </div>
       
     </header>
-
+    <style>
+    img {
+     border-radius: 30%;
+    }
+    </style>
     <div class="hero" style="background-image: url({% static 'homepage/images/hero.jpg' %});"></div>
+    <div class="hero" style="background-image: url({% static 'homepage/images/com.jpg' %});">
+        <h1 style="background-color:powderblue;
+            border-radius: 10px;
+            text-align:center;
+            padding: 1px;
+            border: 1px solid lightgray;
+            font-size: 50px;
+            margin: 10px;"
+            ><span>Welcome to Activity+</span></h1>
+        </H2>
+        <H3 style="background: lightsteelblue;
+            border-radius: 10px;
+            text-align:center;
+            font-size: 30px;
+            padding: 1px;
+            border: 1px solid lightgray;
+            margin: 10px;">
+            We look forward to helping you keep track of your projects,assignments,and exams with our calendar planner.
+        </H3>
+        <H3 style="background: palevioletred;
+            border-radius: 10px;
+            text-align:center;
+            font-size: 30px;
+            padding: 1px;
+            border: 1px solid lightgray;
+            margin: 10px;">
+        With our planner you will be able to create, delete and modify events You will also be able to mark an event as complete.
+            </h3>
+        <H3 style="background: lightgoldenrodyellow;
+            border-radius: 10px;
+            text-align:center;
+            font-size: 30px;
+            padding: 1px;
+            border: 1px solid lightgray;
+            margin: 10px;">
+        Activity+ hopes to be able to help you become a more responsible student and a student that doesn't leave everything until the last minute.
+            </h3>
+        <H3 style="background: darkseagreen;
+            border-radius: 10px;
+            text-align:center;
+            font-size: 30px;
+            padding: 1px;
+            border: 1px solid lightgray;
+            margin: 10px;">
+        You also have the Activity+ mascot cheering you on as you can see below
+            </h3>
 
-    <div style="background-color:white;color:black;padding:20px;">
-      <h2 style="text-align:center;">Welcome to Activity+</h2>
-      <h5 style="text-align:center;">We look forward to helping you keep track of your projects, assignments,</h5>
-      <h5 style="text-align:center;"> and exams with our calendar/planner.</h5>
-      <h5 style="text-align:center;">With our planner you will be able to</h5>
-      <h5 style="text-align:center;">create, delete and modify events.</h5>
-      <h5 style="text-align:center;">You will also be able to mark an event as complete.</h5>
-      <h5 style="text-align:center;">Activity+ hopes to be able to help you become a more responsible student,</h5>
-      <h5 style="text-align:center;">and a student that doesn;t leave everything until the last minute.</h5>
-      <h5 style="text-align:center;">You also have the Activity+ mascot cheering you on as you can see below.</h5>
-      <p style="text-align:center;"><img src="{%static 'homepage/images/hero_2.gif'%}" ></p>
+{#      <h2 style="text-align:center; background: ghostwhite;">Welcome to Activity+</h2>#}
+{#      <h5 style="text-align:center;">We look forward to helping you keep track of your projects, assignments,</h5>#}
+{#      <h5 style="text-align:center;"> and exams with our calendar/planner.</h5>#}
+{#      <h5 style="text-align:center;">With our planner you will be able to</h5>#}
+{#      <h5 style="text-align:center;">create, delete and modify events.</h5>#}
+{#      <h5 style="text-align:center;">You will also be able to mark an event as complete.</h5>#}
+{#      <h5 style="text-align:center;">Activity+ hopes to be able to help you become a more responsible student,</h5>#}
+{#      <h5 style="text-align:center;">and a student that doesn;t leave everything until the last minute.</h5>#}
+{#      <h5 style="text-align:center;">You also have the Activity+ mascot cheering you on as you can see below.</h5>#}
+      <p style="text-align:center;
+            style=background: ghostwhite;
+            border-radius: 100px;
+            padding: 10px;
+            margin: 10px;">
+          <img src="{%static 'homepage/images/hero_2.gif'%}" ></p>
     </div>
     
     <script src="{% static 'homepage/js/jquery-3.3.1.min.js' %}"></script>
